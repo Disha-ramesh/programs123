@@ -1,0 +1,18 @@
+#include<stdlib.h>
+#include<stdio.h>
+#define MAX 100
+int main()
+{
+    int n,i=0,j=0;
+    int a[MAX];
+    printf("enter the number\n");
+    scanf("%d",&n);
+    printf("the digitd in same order are\n");
+    while(n>0)
+    {
+        a[i++]=n%10;
+        n/=10;
+    }
+    for(j=i-1;j>=0;j--)
+        printf("%d\n",a[j]);
+}
